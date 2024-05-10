@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Películas</title>
+  <link rel="icon" type="image/svg+xml" href="/public/otroicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora una amplia selección de películas y series">
+  
+  <!-- Uso de Bootstrap para estilos modernos y responsivos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Estilos adicionales -->
+</head>
+<body>
+  <!-- Encabezado con navegación -->
+  <header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Página de Películas</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/favorites">Favoritos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/search">Búsqueda</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección principal con lista de películas -->
+  <main class="container my-5">
+    <div class="row"> <!-- Distribución de películas en filas -->
+      <!-- Ejemplo de tarjeta de película -->
+      <div class="col-md-4 mb-4"> <!-- Una tarjeta de película -->
+        <div class="card">
+          <img src="https://via.placeholder.com/200x300" class="card-img-top" alt="Película 1">
+          <div class="card-body">
+            <h5 class="card-title">Película 1</h5>
+            <p class="card-text">Breve descripción de la película.</p>
+            <a href="/movie/1" class="btn btn-primary">Ver detalles</a> <!-- Botón para detalles -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Agrega más tarjetas de películas según sea necesario -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/200x300" class="card-img-top" alt="Película 2">
+          <div class="card-body">
+            <h5 class="card-title">Película 2</h5>
+            <p class="card-text">Breve descripción de la película.</p>
+            <a href="/movie/2" class="btn btn-secondary">Ver detalles</a> <!-- Otro botón de detalles -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/200x300" class="card-img-top" alt="Película 3">
+          <div class="card-body">
+            <h5 class="card-title">Película 3</h5>
+            <p class="card-text">Breve descripción de la película.</p>
+            <a href="/movie/3" class="btn btn-success">Ver detalles</a> <!-- Tercer botón -->
+          </div>
+        </div>
+      </div>
+    </div> <!-- Fin de la fila -->
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white p-3 text-center">
+    <p>&copy; 2024 Página de Películas. Todos los derechos reservados.</p>
+    <div>
+      <a href="https://facebook.com" class="text-white mx-2"><i class="fab fa-facebook"></i></a> <!-- Ícono de Facebook -->
+      <a href="https://twitter.com" class="text-white mx-2"><i class="fab fa-twitter"></i></a> <!-- Ícono de Twitter -->
+      <a href="https://instagram.com" class="text-white mx-2"><i class="fab fa-instagram"></i></a> <!-- Ícono de Instagram -->
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap y React -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="module" src="/src/main.tsx"></script> <!-- Carga el script de React -->
+</body>
+</html>
+
